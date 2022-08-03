@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  
+  </head>
+  <body>
+    <nav class="bg-indigo-900 px-4 flex justify-between">
+      <ul>
+        <li class="flex list-none">
+          <img src="logo11.png" alt="" width="200px" height="50px" />
+        </li>
+      </ul>
+      <ul class="flex justify-between relative top-2">
+        <li class="list-none text-white px-2">
+          <a href="howitworks.html"> How it works? </a>
+        </li>
+        <li class="list-none text-white px-2">
+          <a href="club.html"> club</a>
+        </li>
+        <li class="list-none text-white px-2">
+          <a href="blog.html">Blog</a>
+        </li>
+        <li class="list-none text-white px-2">
+          <a href="fag.html">Fag</a>
+        </li>
+
+        <li class="list-none text-white px-2">
+          <a href="feedback.html">Feedback</a>
+        </li>
+        <li class="list-none px-2">
+          <button class="btn bg-white h-8 px-1 font-bold">
+            Log in /Sign up
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="grid grid-cols-6 border-b-2 ">
+      <div class="col-span-4  ">
+        <div class="grid grid-cols-4 gap-2  z-0   ">
+          <div class="card row-span-2">
+            <img src="image.jpeg" alt="" class="h-full" />
+          </div>
+          <div class="card  text-indigo-700 text-lg col-span-3 w-full">
+            Periodic Maintainance
+          </div>
+          <div class="card col-span-3  space-x-2 grid grid-cols-2 w-full">
+            <div class="card">
+              <i class="fa fa-check-circle text-green-800 text-xl"> Engine </i>
+              <ul class="flex list-disc gap-4 space-x-4">
+                <li>Oil change</li>
+                <li>check oil fiber</li>
+              </ul>
+              <ul class="flex list-disc gap-4 space-x-4">
+                <li>Oil change</li>
+                <li>check oil fiber</li>
+              </ul>
+              <i class="fa fa-check-circle text-green-800 text-xl"> Engine </i>
+              <ul class="flex list-disc gap-4 space-x-4">
+                <li>Oil change</li>
+                <li>check oil fiber</li>
+              </ul>
+              <ul class="flex list-disc gap-4 space-x-4">
+                <li>Oil change</li>
+                <li>check oil fiber</li>
+              </ul>
+            </div>
+            <div class="card2">
+              <i class="fa fa-check-circle text-green-800 text-xl"> Engine </i>
+              <ul class="flex list-disc gap-4 space-x-4">
+                <li>Oil change</li>
+                <li>check oil fiber</li>
+              </ul>
+              <ul class="flex list-disc gap-4 space-x-4">
+                <li>Oil change</li>
+                <li>check oil fiber</li>
+              </ul>
+              <i class="fa fa-check-circle text-green-800 text-xl"> Engine </i>
+              <ul class="flex list-disc gap-4 space-x-4">
+                <li>Oil change</li>
+                <li>check oil fiber</li>
+              </ul>
+              <ul class="flex list-disc gap-4 space-x-4">
+                <li>Oil change</li>
+                <li>check oil fiber</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-2 border shadow-2xl">
+        <h6 class="text-invigo-900 font-bold text-2xl text-center">
+          BajajCT100
+        </h6>
+        <hr />
+        <h6 class="flex py-2">
+          Periodic Maintainance
+          <input type="number" width="200px" height="200px" class="border" id="firstnumber" />
+        </h6>
+        <h6 class="flex py-2">
+          battery replacement
+          <input type="number" width="200px" height="200px" class="border" id="secondnumber" />
+        </h6>
+        <h6 class="flex py-2">
+          wheel replacement
+          <input type="number" width="200px" height="200px" class="border" id="thirdnumber" />
+        </h6>
+        <h6 class="py-2">
+          Total :
+          <span id="total" class="border border-blue-900  text-lg "></span>
+        </h6>
+        <h6 class="py-2">
+          Pay Now
+          <input type="text" checked class="ml-60" />50
+        </h6>
+        <h6 class="py-2">
+          Pay Later
+          <input type="text" checked class="ml-56" />230
+        </h6>
+        <select
+          name="select your area"
+          id="select your area"
+          class="w-full py-2 bg-gray-300"
+          
+        >
+          <option value="area">select your area</option>
+          <option value="area">pune</option>
+          <option value="area">pune</option>
+        </select>
+        <h6 class="py-2">need pick-up & drop</h6>
+        <button type="submit" value="submit" name="submit" class="border w-full text-white bg-purple-700" onclick="myfunction1()">
+          check out
+        </button>
+      </div>
+    </div>
+    <div class="w-8/12  -mt-20">
+      <div class="grid grid-cols-3">
+        <div class="col-span-3 -mt-5 text-2xl  ml-12 font-bold "> Additional services you may like </div>
+       </div> 
+        <div class=" border rounded shadow text-center ">
+          <section class="border grid grid-cols-3" id="card"></section>
+
+          </div>
+
+       
+        
+    </div>
+      </div>
+      <script>
+          const data = [
+        {
+          title: "wheel2.png",
+          discription: "wheel replacement",
+          output: 'add service',
+        },
+        {
+          title: "brake.jpg",
+          discription: "brake replacement",
+          output: 'add service',
+        },
+        {
+          title: "battery.png",
+          discription: "battery replacement",
+          output: 'add service',
+        },
+        {
+          title: "wheel2.png",
+          discription: "wheel replacement",
+          output: 'add service',
+        },
+        {
+          title: "brake.jpg",
+          discription: "brake replacement",
+          output: 'add service',
+        },
+        {
+          title: "battery.png",
+          discription: "battery replacement",
+          output: 'add service',
+        },
+      
+      ];
+      data.forEach((res) => {
+        let card = document.createElement("div");
+        var DOM_img = document.createElement("img");
+        DOM_img.src += res.title;
+        card.appendChild(DOM_img);
+        card.innerHTML+='<h1>'+res.discription+'</h1>'
+        card.innerHTML+='<button>'+res.output+'</button>'
+        
+       
+      
+       
+
+        
+
+        let conatainer = document.querySelector("#card");
+        conatainer.appendChild(card);
+        card.addEventListener('click',function myfunction1 (){
+          let num1 =document.getElementById('firstnumber').value=650;
+          let num2 =document.getElementById('secondnumber').value=1650;
+          let num3 =document.getElementById('thirdnumber').value=2650;
+           let total=num1+num2+num3;
+           let total1=document.getElementById('total').value=total;
+
+          
+          
+        })
+      });
+
+      //   const container = document.getElementById("card");
+      //   data.forEach((result, idx) => {
+      //     const card = document.createElement("div");
+      //     card.classList = "card-body";
+
+      //     const content = `
+      //         <div class="cards" id="heading-${idx}">
+      //             <h1>${result.title}</h1>
+
+      //             </div>
+      //         `;
+      //   });
+    </script>
+       
+
+  
+      </div>
+  </body>
+</html>
+<Style>
+  #card button {
+    border: 2px solid blue;
+    color: blue;
+    margin: 10px;
+  }
+  #card img {
+    width: 100px;
+    height: 100px;
+    margin-left: 110px;
+  }
+</Style>
